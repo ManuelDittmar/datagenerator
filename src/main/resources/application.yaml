@@ -1,0 +1,28 @@
+#zeebe.client.cloud:
+#  region: bru-2
+#  clusterId: xxxx
+#  clientId: xxxx
+#  clientSecret: xxxx
+
+zeebe.client:
+  cloud:
+    clientId: xxxx
+    clientSecret: xxxx
+    authUrl: https://login.microsoftonline.com/xxxx/oauth2/v2.0/token
+    scope: xxxx/.default
+  broker:
+    grpcAddress: https://zeebe.xxxx.de
+
+scheduler:
+  processIds: >
+    Example_Process
+
+template:
+  int:
+    lower-bound: 1
+    upper-bound: 10
+  double:
+    lower-bound: 5.0
+    upper-bound: 100
+  boolean:
+    true-chance: 0.8
